@@ -1,4 +1,4 @@
-import pieces from './pieces.json' assert { type: 'json' };
+const { default: pieces } = await import("./pieces.json", { assert: { type: "json" } })
 
 var currentAudio = "";
 var currentName = "";
