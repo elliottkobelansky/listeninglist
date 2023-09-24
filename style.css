@@ -15,6 +15,24 @@ select {
     padding: 10px;
 }
 
+#tanswer {
+    text-align: center;
+    background: #ffffff;
+    font-size: inherit;
+    color: #282c34;
+    font-family: inherit;
+    padding: 10px;
+    width: 454px;
+}
+
+button {
+    font-family: inherit;
+    color: #282c34;
+    padding: 10px;
+    font-size: inherit;
+    width: 95px;
+}
+
 audio {
     padding: 15px;
 }
@@ -22,18 +40,43 @@ audio::-webkit-media-controls-time-remaining-display {
     display: none;
 }
 
+.option {
+    padding: 0px;
+
+}
+
+
+.left {
+    float: left;
+    width: 25%;
+}
+
 .center {
     text-align: center;
-    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
 }
 
-.confirm {
-    border: 2px solid;
-    padding: 5px;
-    margin: 40px;
+.right {
+    float: left;
+    width: 25%;
 }
 
-.confirm:hover {
-    color: #e5c07b;
-    cursor: pointer;
+.halfa {
+    float: left;
+    width: 50%;
+    text-align: right;
 }
+
+.halfb {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#selector {
+    text-align: left;
+}
+
+

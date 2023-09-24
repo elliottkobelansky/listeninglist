@@ -9,27 +9,63 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
-      <div class="center">
-        <div>
-          <h1>Listening List</h1>  
-          <h4>A practice tool.</h4>
+    <div class="left">
+      <b>Settings</b>
+      <br>
+      <br>
+      Semester
+      <select class="option" id="semester">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+      <br>
+      Answer Type
+      <select class="option" id="answertype">
+        <option>Selection</option>
+        <option>Typing</option>
+      </select>
+      <br><br><br>
+      Created by Elliott Kobelansky
+      <br>
+      Discord: elikob
+    </div>
+    <div class="center">
+      <div>
+        <h1>Listening List</h1>  
+        <h4>A study tool.</h4>
+      </div>
+      <img src="static/cat.png" width="200" height="200">
+      <br>
+      <audio controls autoplay id="aud">
+        <source id="audsrc" src="" type="audio/mp3">
+      </audio>
+      <br>
+      <div>
+        <select id="sanswer" name="option">
+        </select>
+        <input type="text" autocomplete="off" id="tanswer" style="display: none"/>
+      </div>
+      <br>
+      <div>
+        <div class="halfa">
+          <button id="confirm">Confirm</button>
         </div>
-        <audio controls autoplay id="aud">
-          <source id="audsrc" src="" type="audio/mp3">
-        </audio>
-        <br>
-        <form action="">
-          <select id="answer" name="option">
-          </select>
-        </form>
-        <br>
-        <div>
-          <span id="confirm" class="confirm">Confirm</span>
-          <span id="next" class="confirm">Skip</span>
+        <div class="halfb">
+          <button id="next">Skip</button>
         </div>
       </div>
-    </main>
+    </div>
+    <div class="right">
+      <div style="text-align: center">
+        <b>Piece Selection:</b>
+        <div id="selector">
+        </div>
+        <br>
+      </div>
+    </div>
 	<script type="module" src="main.js"></script>
   </body>
 </html>
