@@ -20,7 +20,7 @@ function rand(list) {
 }
 
 function playAudio(input) {
-    input = "./static/ML3/" + input;
+    //input = "./static/ML3/" + input;
     audsrc.src = input; 
     aud.load();
     aud.play();

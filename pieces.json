@@ -3,47 +3,47 @@
         {
             "name": "Lydia",
             "composer": "Faure",
-            "file": "lydia.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/lydia.mp3?raw=true"
         },
         {
             "name": "Avant que tu ne t'en ailles",
             "composer": "Faure",
-            "file": "avantquetu.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/avantquetu.mp3?raw=true"
         },
         {
             "name": "La lune blanche luit dans le bois",
             "composer": "Faure",
-            "file": "laluneblanche.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/alaluneblanche.mp3?raw=true"
         },
         {
             "name": "Pierrot Lunaire Part II, Nacht",
             "composer": "Schoenberg",
-            "file": "nacht.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/nacht.mp3?raw=true"
         },
         {
             "name": "Pierrot Lunaire Part II, Enthauptung",
             "composer": "Schoenberg",
-            "file": "enthauptung.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/enthauptung.mp3?raw=true"
         },
         {
             "name": "6 Bagatelles for String Quartet",
             "composer": "Webern",
-            "file": "bagatelles.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/bagatelles.mp3?raw=true"
         },
         {
             "name": "Maple Leaf Rag",
             "composer": "Joplin",
-            "file": "mapleleaf.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/mapleleaf.mp3?raw=true"
         },
         {
             "name": "Memphis Blues",
             "composer": "W.C. Handy",
-            "file": "memphis.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/memphis.mp3?raw=true"
         },
         {
             "name": "West End Blues",
             "composer": "King Oliver",
-            "file": "westend.wav"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/westend.mp3?raw=true"
         }
 
 
