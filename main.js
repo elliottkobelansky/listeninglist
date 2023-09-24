@@ -17,7 +17,7 @@ document.getElementById("semester").value = semester;
 
 let answertype = localStorage.getItem("answertype")
 if (!answertype) {
-    answertype = "Selection";
+    answertype = "Select";
 }
 document.getElementById("answertype").value = answertype;
 loadAnswerType(false);
@@ -54,6 +54,7 @@ function playAudio(input, play = true) {
     }
 }
 
+
 function nextAudio(play = true) {
     let r = rand(bruh);
     let f = r.file;
@@ -67,7 +68,7 @@ function nextAudio(play = true) {
 }
 
 function populateAnswers() {
-    if (answertype === "Selection") {
+    if (answertype === "Select") {
         let a = document.getElementById("sanswer");
         a.innerHTML = "";
         bruh.forEach((element, key) => {
@@ -77,22 +78,17 @@ function populateAnswers() {
     const selector = document.getElementById('selector');
     selector.innerHTML = "";
     bruh.forEach((element, key) => {
-        let label = document.createElement('label');
-        label.innerHTML = element.name;
-        let button = document.createElement('input');
+        let label = document.createElement('a');
+        label.innerHTML = "<b>" + (key + 1) + "</b>  " + element.name;
         let br = document.createElement('br');
-        button.setAttribute('type', 'checkbox');
-        button.setAttribute('checked', 'true');
-        button.setAttribute('style', 'float: right');
         selector.appendChild(label);
-        selector.appendChild(button);
         selector.append(br);
     });
 }
 populateAnswers();
 
 document.getElementById("confirm").onclick = function () {
-    if (answertype === "Selection") {
+    if (answertype === "Select") {
         document.getElementById("sanswer").blur();
         let guess = document.getElementById("sanswer").value;
         console.log(guess, currentAudio);
@@ -105,7 +101,7 @@ document.getElementById("confirm").onclick = function () {
 
         }
     }
-    else if (answertype === "Typing") {
+    else if (answertype === "Type") {
         // Case insensitive!
         document.getElementById("tanswer").blur();
         let guess = document.getElementById("tanswer").value.toUpperCase();
@@ -137,19 +133,19 @@ function loadAnswerType (alt = true) {
     const a = document.getElementById("answertype").value;
     const f = document.getElementById("sanswer");
     const g = document.getElementById("tanswer");
-    if (a === "Typing") {
+    if (a === "Type") {
         console.log(alert);
         if (alt == true) {
             alert("Type piece name EXACTLY followed by a comma and the composers last name or common nickname (case-insensitive). Example: Rondo Alla Turca, Mozart")
         }
         f.style.display = "none";
         g.style.display = "";
-        answertype = "Typing";
+        answertype = "Type";
     }
-    else if (a === "Selection") {
+    else if (a === "Select") {
         f.style.display = "";
         g.style.display = "none";
-        answertype = "Selection";
+        answertype = "Select";
         populateAnswers();
     }
     console.log(answertype);
