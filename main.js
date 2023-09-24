@@ -30,6 +30,9 @@ function playAudio(input, play = true) {
     if (play) {
         aud.play();
     }
+    else {
+        aud.pause();
+    }
 }
 
 function nextAudio(play = true) {
@@ -37,19 +40,42 @@ function nextAudio(play = true) {
     let f = r.file;
     let n = r.name;
     let c = r.composer;
+    // Prevent duplicates
+    while (n == currentName) {
+        let r = rand(bruh);
+        let f = r.file;
+        let n = r.name;
+        let c = r.composer;
+    }
     currentAudio = f;
     currentName = n;
     currentComposer = c;
+    console.log(f);
     playAudio(f, play);
 }
 
 function populateAnswers() {
     if (answertype === "Selection") {
         let a = document.getElementById("sanswer");
+        a.innerHTML = "";
         bruh.forEach((element, key) => {
             a[key] = new Option(element.name + ", " + element.composer, element.file);
         });
     }
+    const selector = document.getElementById('selector');
+    selector.innerHTML = "";
+    bruh.forEach((element, key) => {
+        let label = document.createElement('label');
+        label.innerHTML = element.name;
+        let button = document.createElement('input');
+        let br = document.createElement('br');
+        button.setAttribute('type', 'checkbox');
+        button.setAttribute('checked', 'true');
+        button.setAttribute('style', 'float: right');
+        selector.appendChild(label);
+        selector.appendChild(button);
+        selector.append(br);
+    });
 }
 populateAnswers();
 
@@ -104,11 +130,20 @@ document.getElementById("answertype").onchange = function () {
         f.style.display = "";
         g.style.display = "none";
         answertype = "Selection";
+        populateAnswers();
     }
 }
 
 document.getElementById("semester").onchange = function () {
     semester = document.getElementById("semester").value;
+    if (semester == 3) {
+        bruh = pieces.ML3;
+    }
+    else if (semester == 1) {
+        bruh = pieces.ML1;
+    }
+    populateAnswers();
+    nextAudio(false);
 }
 
 document.getElementById("next").onclick = function () {
@@ -121,16 +156,3 @@ document.getElementById("cat").onclick = function () {
 
 // when sem changes
 
-const selector = document.getElementById('selector');
-bruh.forEach((element, key) => {
-    let label = document.createElement('label');
-    label.innerHTML = element.name;
-    let button = document.createElement('input');
-    let br = document.createElement('br');
-    button.setAttribute('type', 'checkbox');
-    button.setAttribute('checked', 'true');
-    button.setAttribute('style', 'float: right');
-    selector.appendChild(label);
-    selector.appendChild(button);
-    selector.append(br);
-});

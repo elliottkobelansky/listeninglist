@@ -1,4 +1,17 @@
 {
+    "ML1": [
+        {
+            "name": "Test1a",
+            "composer": "Test1",
+            "file": "./static/ML1/test1.mp3"
+        },
+        {
+            "name": "Test2a",
+            "composer": "Test2",
+            "file": "./static/ML1/test2.mp3"
+        }
+
+    ],
     "ML3": [
         {
             "name": "Lydia",
@@ -13,12 +26,7 @@
         {
             "name": "La lune blanche luit dans le bois",
             "composer": "Faure",
-            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/alaluneblanche.mp3?raw=true"
-        },
-        {
-            "name": "Pierrot Lunaire Part II, Nacht",
-            "composer": "Schoenberg",
-            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/nacht.mp3?raw=true"
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/laluneblanche.mp3?raw=true"
         },
         {
             "name": "Pelleas et Melisande Act III Mes longs cheveux",
@@ -34,6 +42,11 @@
             "name": "Chamber Symphony no. 1",
             "composer": "Schoenberg",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/schoenberg1.mp3?raw=true"
+        },
+        {
+            "name": "Pierrot Lunaire Part II, Nacht",
+            "composer": "Schoenberg",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/nacht.mp3?raw=true"
         },
         {
             "name": "Pierrot Lunaire Part II, Enthauptung",
@@ -64,8 +77,11 @@
             "name": "West End Blues",
             "composer": "King Oliver",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/westend.mp3?raw=true"
+        },
+        {
+            "name": "Wozzeck",
+            "composer": "Berg",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/wozzeck.mp3?raw=true"
         }
-
-
     ]
 }
