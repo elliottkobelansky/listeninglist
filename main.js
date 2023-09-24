@@ -1,4 +1,4 @@
-import pieces from './pieces.json' asser { type: 'json' };
+import pieces from './pieces.json' assert { type: 'json' };
 
 var currentAudio = "";
 var currentName = "";
