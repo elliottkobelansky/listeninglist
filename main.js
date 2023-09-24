@@ -67,12 +67,33 @@ function nextAudio(play = true) {
     playAudio(f, play);
 }
 
+// copied from stackoverflow lmao
+function removeDuplicates(originalArray, objKey) {
+  var trimmedArray = [];
+  var values = [];
+  var value;
+
+  for(var i = 0; i < originalArray.length; i++) {
+    value = originalArray[i][objKey];
+
+    if(values.indexOf(value) === -1) {
+      trimmedArray.push(originalArray[i]);
+      values.push(value);
+    }
+  }
+
+  return trimmedArray;
+
+}
+
 function populateAnswers() {
+    let x = removeDuplicates(bruh, "name");
+    console.log(x)
     if (answertype === "Select") {
         let a = document.getElementById("sanswer");
         a.innerHTML = "";
-        bruh.forEach((element, key) => {
-            a[key] = new Option(element.name + ", " + element.composer, element.file);
+        x.forEach((element, key) => {
+            a[key] = new Option(element.name + ", " + element.composer, element.name);
         });
     }
     const selector = document.getElementById('selector');
@@ -91,8 +112,8 @@ document.getElementById("confirm").onclick = function () {
     if (answertype === "Select") {
         document.getElementById("sanswer").blur();
         let guess = document.getElementById("sanswer").value;
-        console.log(guess, currentAudio);
-        if (guess === currentAudio) {
+        console.log(guess, name);
+        if (guess === currentName) {
             alert("Correct");
             cor = cor + 1;
         }

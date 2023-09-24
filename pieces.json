@@ -1,12 +1,12 @@
 {
     "ML1": [
         {
-            "name": "Violin Concerto in A Minor mvt. 1",
+            "name": "Violin Concerto in A Minor",
             "composer": "Vivaldi",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/vivaldi1.mp3?raw=true"
         },
         {
-            "name": "Violin Concerto in A Minor mvt. 3",
+            "name": "Violin Concerto in A Minor",
             "composer": "Vivaldi",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/vivaldi3.mp3?raw=true"
         },
