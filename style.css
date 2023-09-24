@@ -95,6 +95,7 @@ audio::-webkit-media-controls-time-remaining-display {
   #sanswer { width: 200px; font-size: 13px;}
   #tanswer { width: 200px; font-size: 13px;}
   #aud { width: 200px; }
+  button { font-size: 13px; }
   .left { 
       order: 2;
       text-align: center;
