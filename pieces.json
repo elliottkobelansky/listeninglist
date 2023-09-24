@@ -31,6 +31,21 @@
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/nunkomm.mp3?raw=true"
         },
         {
+            "name": "St. Matthew Passion",
+            "composer": "Bach",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/matthew1.mp3?raw=true"
+        },
+        {
+            "name": "St. Matthew Passion",
+            "composer": "Bach",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/matthew2.mp3?raw=true"
+        },
+        {
+            "name": "St. Matthew Passion",
+            "composer": "Bach",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/matthew3.mp3?raw=true"
+        },
+        {
             "name": "Giulio Cesare",
             "composer": "Handel",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/giulio.mp3?raw=true"
