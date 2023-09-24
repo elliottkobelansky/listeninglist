@@ -31,6 +31,7 @@ button {
     padding: 10px;
     font-size: inherit;
     width: 95px;
+    text-align: center;
 }
 
 audio {
