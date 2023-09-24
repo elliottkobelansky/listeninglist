@@ -9,64 +9,66 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="left">
-      <b>Settings</b>
-      <br>
-      <br>
-      Semester
-      <select class="option" id="semester">
-        <option>1</option>
-        <option selected=true>3</option>
-      </select>
-      <br>
-      <br>
-      Answer Type
-      <select class="option" id="answertype">
-        <option>Selection</option>
-        <option>Typing</option>
-      </select>
-      <br><br><br>
-      Created by Elliott Kobelansky
-      <br>
-      Discord: elikob
-      <br><br>
-      WORK IN PROGRESS
-    </div>
-    <div class="center">
-      <div>
-        <h1>Listening List</h1>  
-        <h4>A study tool.</h4>
-      </div>
-      <img src="static/cat.png" width="200" height="200" id="cat" class="cat">
-      <br>
-      <audio controls autoplay id="aud">
-        <source id="audsrc" src="" type="audio/mp3">
-      </audio>
-      <br>
-      <div>
-        <select id="sanswer" name="option">
+    <div class="main">
+      <div class="left">
+        <b>Settings</b>
+        <br>
+        <br>
+        Semester
+        <select class="option" id="semester">
+          <option>1</option>
+          <option selected=true>3</option>
         </select>
-        <input type="text" autocomplete="off" id="tanswer" style="display: none"/>
+        <br>
+        <br>
+        Answer Type
+        <select class="option" id="answertype">
+          <option>Selection</option>
+          <option>Typing</option>
+        </select>
+        <br><br><br>
+        Created by Elliott Kobelansky
+        <br>
+        Discord: elikob
+        <br><br>
+        WORK IN PROGRESS
       </div>
-      <br>
-      <div>
-        <div class="halfa">
-          <button id="confirm">Confirm</button>
+      <div class="center">
+        <div>
+          <h1>Listening List</h1>  
+          <h4>A study tool.</h4>
         </div>
-        <div class="halfb">
-          <button id="next">Skip</button>
-        </div>
-      </div>
-    </div>
-    <div class="right">
-      <div style="text-align: center">
-        <b>Piece Selection:</b>
-        (this doesn't work yet)
-        <div id="selector">
+        <img src="static/cat.png" width="200" height="200" id="cat" class="cat">
+        <br>
+        <audio controls autoplay id="aud">
+          <source id="audsrc" src="" type="audio/mp3">
+        </audio>
+        <br>
+        <div>
+          <select id="sanswer" name="option">
+          </select>
+          <input type="text" autocomplete="off" id="tanswer" style="display: none"/>
         </div>
         <br>
+        <div>
+          <div class="halfa">
+            <button id="confirm">Confirm</button>
+          </div>
+          <div class="halfb">
+            <button id="next">Skip</button>
+          </div>
+        </div>
       </div>
+      <div class="right">
+        <div style="text-align: center">
+          <b>Piece Selection:</b>
+          (this doesn't work yet)
+          <div id="selector">
+          </div>
+          <br>
+        </div>
+      </div>
+      <script type="module" src="main.js"></script>
     </div>
-	<script type="module" src="main.js"></script>
   </body>
 </html>
