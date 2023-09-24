@@ -1,0 +1,51 @@
+{
+    "ML3": [
+        {
+            "name": "Lydia",
+            "composer": "Faure",
+            "file": "lydia.mp3"
+        },
+        {
+            "name": "Avant que tu ne t'en ailles",
+            "composer": "Faure",
+            "file": "avantquetu.mp3"
+        },
+        {
+            "name": "La lune blanche luit dans le bois",
+            "composer": "Faure",
+            "file": "laluneblanche.mp3"
+        },
+        {
+            "name": "Pierrot Lunaire Part II, Nacht",
+            "composer": "Schoenberg",
+            "file": "nacht.mp3"
+        },
+        {
+            "name": "Pierrot Lunaire Part II, Enthauptung",
+            "composer": "Schoenberg",
+            "file": "enthauptung.mp3"
+        },
+        {
+            "name": "6 Bagatelles for String Quartet",
+            "composer": "Webern",
+            "file": "bagatelles.mp3"
+        },
+        {
+            "name": "Maple Leaf Rag",
+            "composer": "Joplin",
+            "file": "mapleleaf.mp3"
+        },
+        {
+            "name": "Memphis Blues",
+            "composer": "W.C. Handy",
+            "file": "memphis.mp3"
+        },
+        {
+            "name": "West End Blues",
+            "composer": "King Oliver",
+            "file": "westend.mp3"
+        }
+
+
+    ]
+}

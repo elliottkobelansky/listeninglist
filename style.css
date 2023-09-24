@@ -1,0 +1,32 @@
+body {
+    background-color: #282c34;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+select {
+    text-align: center;
+    background: inherit;
+    width: auto;
+    font-size: inherit;
+    color: inherit;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.confirm {
+    border: 2px solid;
+    padding: 5px;
+    margin: 40px;
+}
+
+.confirm:hover {
+    color: #e5c07b;
+    cursor: pointer;
+}
