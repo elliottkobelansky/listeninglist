@@ -98,7 +98,7 @@ function populateAnswers() {
     }
     const selector = document.getElementById('selector');
     selector.innerHTML = "";
-    bruh.forEach((element, key) => {
+    x.forEach((element, key) => {
         let label = document.createElement('a');
         label.innerHTML = "<b>" + (key + 1) + "</b>  " + element.name;
         let br = document.createElement('br');
