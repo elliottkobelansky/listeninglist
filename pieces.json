@@ -1,16 +1,60 @@
 {
     "ML1": [
         {
-            "name": "Test1a",
-            "composer": "Test1",
-            "file": "./static/ML1/test1.mp3"
+            "name": "Violin Concerto in A Minor mvt. 1",
+            "composer": "Vivaldi",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/vivaldi1.mp3?raw=true"
         },
         {
-            "name": "Test2a",
-            "composer": "Test2",
-            "file": "./static/ML1/test2.mp3"
+            "name": "Violin Concerto in A Minor mvt. 3",
+            "composer": "Vivaldi",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/vivaldi3.mp3?raw=true"
+        },
+        {
+            "name": "25e Ordre for Harpsichord",
+            "composer": "Couperin",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/couperin25.mp3?raw=true"
+        },
+        {
+            "name": "Prelude and Fugue in A Minor for Organ",
+            "composer": "Bach",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/bachorgan.mp3?raw=true"
+        },
+        {
+            "name": "Hippolyte et Aricie",
+            "composer": "Rameau",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/hippolyte.mp3?raw=true"
+        },
+        {
+            "name": "Nun Komm der Heiden Heiland",
+            "composer": "Bach",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/nunkomm.mp3?raw=true"
+        },
+        {
+            "name": "Giulio Cesare",
+            "composer": "Handel",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/giulio.mp3?raw=true"
+        },
+        {
+            "name": "Saul",
+            "composer": "Handel",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/saul.mp3?raw=true"
+        },
+        {
+            "name": "La Serva Padrona",
+            "composer": "Pergolesi",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/uberto.mp3?raw=true"
+        },
+        {
+            "name": "Stabat Mater",
+            "composer": "Pergolesi",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/stabatmater.mp3?raw=true"
+        },
+        {
+            "name": "Ordfeo ed Euridice",
+            "composer": "Gluck",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML1/orfeo.mp3?raw=true"
         }
-
     ],
     "ML3": [
         {
