@@ -1,4 +1,9 @@
-const { default: pieces } = await import("./pieces.json", { assert: { type: "json" } })
+async function getData(url) {
+  const response = await fetch(url);
+  return response.json();
+}
+
+const pieces = await getData("./pieces.json");
 
 var currentAudio = "";
 var currentName = "";
