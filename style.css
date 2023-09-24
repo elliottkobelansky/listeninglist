@@ -1,20 +1,27 @@
 body {
     background-color: #282c34;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
+    font-family: Optima, sans-serif;
 }
 
 select {
     text-align: center;
-    background: inherit;
+    background: #ffffff;
     width: auto;
     font-size: inherit;
-    color: inherit;
+    color: #282c34;
+    font-family: inherit;
+    padding: 10px;
 }
 
+audio {
+    padding: 15px;
+}
 audio::-webkit-media-controls-time-remaining-display {
     display: none;
 }
+
 .center {
     text-align: center;
     align-items: center;

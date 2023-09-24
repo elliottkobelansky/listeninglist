@@ -34,6 +34,7 @@ bruh.forEach((element, key) => {
 });
 
 document.getElementById("confirm").onclick = function () {
+    document.getElementById("answer").blur();
     let guess = document.getElementById("answer").value;
     console.log(guess, currentAudio);
     if (guess === currentAudio) {
@@ -42,8 +43,13 @@ document.getElementById("confirm").onclick = function () {
     else {
         alert("Incorrect");
     }
+    nextAudio();
 
 };
+
+document.getElementById("answer").onchange = function () {
+    document.getElementById("answer").blur();
+}
 
 document.addEventListener('keydown', event => {
     if (event.code === 'Space') {
