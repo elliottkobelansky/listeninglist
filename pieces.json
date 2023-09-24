@@ -21,6 +21,21 @@
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/nacht.mp3?raw=true"
         },
         {
+            "name": "Pelleas et Melisande Act III Mes longs cheveux",
+            "composer": "Debussy",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/pelleas.mp3?raw=true"
+        },
+        {
+            "name": "Symphony no. 9 mvt. 4",
+            "composer": "Mahler",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/mahler9.mp3?raw=true"
+        },
+        {
+            "name": "Chamber Symphony no. 1",
+            "composer": "Schoenberg",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/schoenberg1.mp3?raw=true"
+        },
+        {
             "name": "Pierrot Lunaire Part II, Enthauptung",
             "composer": "Schoenberg",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/enthauptung.mp3?raw=true"
@@ -31,13 +46,18 @@
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/bagatelles.mp3?raw=true"
         },
         {
+            "name": "Rite of Spring",
+            "composer": "Stravinsky",
+            "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/rite.mp3?raw=true"
+        },
+        {
             "name": "Maple Leaf Rag",
             "composer": "Joplin",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/mapleleaf.mp3?raw=true"
         },
         {
             "name": "Memphis Blues",
-            "composer": "W.C. Handy",
+            "composer": "Handy",
             "file": "https://github.com/elliottkobelansky/listeninglist/blob/main/static/ML3/memphis.mp3?raw=true"
         },
         {

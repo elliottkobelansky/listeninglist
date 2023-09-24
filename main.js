@@ -15,8 +15,7 @@ const audsrc = document.getElementById("audsrc");
 let semester = 1;
 let answertype = "Selection";
 
-setTimeout(nextAudio(), 3000);
-
+nextAudio(false);
 
 function rand(list) {
     console.log(list)
@@ -24,14 +23,16 @@ function rand(list) {
     return item;
 }
 
-function playAudio(input) {
+function playAudio(input, play = true) {
     //input = "./static/ML3/" + input;
     audsrc.src = input; 
     aud.load();
-    aud.play();
+    if (play) {
+        aud.play();
+    }
 }
 
-function nextAudio() {
+function nextAudio(play = true) {
     let r = rand(bruh);
     let f = r.file;
     let n = r.name;
@@ -39,7 +40,7 @@ function nextAudio() {
     currentAudio = f;
     currentName = n;
     currentComposer = c;
-    playAudio(f);
+    playAudio(f, play);
 }
 
 function populateAnswers() {
@@ -61,21 +62,23 @@ document.getElementById("confirm").onclick = function () {
             alert("Correct");
         }
         else {
-            alert("Incorrect");
+            alert("Incorrect. Correct answer: " + currentName + ", " + currentComposer);
         }
     }
     else if (answertype === "Typing") {
         // Case insensitive!
         document.getElementById("tanswer").blur();
         let guess = document.getElementById("tanswer").value.toUpperCase();
-        let ans = (currentName + ", " + currentComposer).toUpperCase();
+        let ans = (currentName + ", " + currentComposer);
+        let sans = ans.toUpperCase();
         console.log(guess, ans);
-        if (guess === ans) {
+        if (guess === sans) {
             alert("Correct");
         }
         else {
-            alert("Incorrect");
+            alert("Incorrect. Correct answer: " + ans);
         }
+        document.getElementById("tanswer").value = '';
     }
     nextAudio();
 
@@ -90,6 +93,9 @@ document.getElementById("answertype").onchange = function () {
     const f = document.getElementById("sanswer");
     const g = document.getElementById("tanswer");
     if (a === "Typing") {
+        alert(
+            "Type piece name EXACTLY followed by a comma and the composers last name or common nickname (case-insensitive). Example: Rondo Alla Turca, Mozart"
+        )
         f.style.display = "none";
         g.style.display = "";
         answertype = "Typing";
@@ -107,6 +113,10 @@ document.getElementById("semester").onchange = function () {
 
 document.getElementById("next").onclick = function () {
     nextAudio();
+};
+
+document.getElementById("cat").onclick = function () {
+    return aud.paused ? aud.play() : aud.pause();
 };
 
 // when sem changes

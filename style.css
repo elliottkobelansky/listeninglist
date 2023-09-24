@@ -79,4 +79,7 @@ audio::-webkit-media-controls-time-remaining-display {
     text-align: left;
 }
 
+.cat:hover {
+    cursor: pointer;
+}
 
